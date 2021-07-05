@@ -9,7 +9,7 @@
         "update": "npm i habo-mp-sdk@latest @haoke/gsx-mp-log@latest -S",
         "upload": "node ./scripts/upload.js",
         "commit": "git-cz",
-        "wxci:dev": "mp-cli build",
+        "wxci:dev": "NODE_ENV=dev node ./src/setEnv.js & mp-cli build & node ci.js",
         "wxci:beta": "NODE_ENV=beta node ./src/setEnv.js & mp-cli build & node ci.js",
         "wxci:test": "NODE_ENV=test node ./src/setEnv.js & mp-cli build & node ci.js",
         "wxci:prod": "NODE_ENV=prod node ./src/setEnv.js & mp-cli build & node ci.js",
