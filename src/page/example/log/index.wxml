@@ -1,0 +1,3 @@
+<view class="container iphone-fullscreen-safe-bottom">
+    <web-view src="http://npm.baijia.com/-/web/detail/@haoke/gsx-mp-log"></web-view>
+</view>

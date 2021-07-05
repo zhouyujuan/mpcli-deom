@@ -1,0 +1,3 @@
+<view class="example">
+    this is an example component {{componentName}}
+</view>

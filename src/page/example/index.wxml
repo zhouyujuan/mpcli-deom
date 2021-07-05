@@ -1,0 +1,35 @@
+<view class="container iphone-fullscreen-safe-bottom ">
+    <view class="section">
+        此模板存在的意义：
+    </view>
+    <view class="section">
+        为了项目的后续整体可扩展性、性能等考虑，为开发者提供一个大致的项目框架，并集成常用的工具，便于快速着手开发业务，而不困扰于项目的配置，周边环境搭建等。
+    </view>
+    <view class="section">
+        模板使用说明：
+    </view>
+    <view class="section">
+        此模板默认安装了一些依赖库和工具，以下为简要介绍，请仔细阅读相关文档，并根据业务情况做一些自定义改动。
+    </view>
+    <view class="section">
+        <navigator url="/page/example/log/index" hover-class="none">
+            <view class="block">
+                性能日志库（必需）
+                <view class="iconic_right1"></view>
+            </view>
+
+        </navigator>
+        <navigator url="/page/example/ui/ui-kit-webview/index" hover-class="none">
+            <view class="block">
+                组件库（非必需）
+                <view class="iconic_right1"></view>
+            </view>
+        </navigator>
+        <navigator url="/page/example/config/index" hover-class="none">
+            <view class="block">
+                自行更改的配置（必需）
+                <view class="iconic_right1"></view>
+            </view>
+        </navigator>
+    </view>
+</view>

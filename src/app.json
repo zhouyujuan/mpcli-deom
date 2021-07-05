@@ -1,0 +1,23 @@
+{
+    "pages": [
+        "page/example/index",
+        "page/example/log/index",
+        "page/example/ui/index",
+        "page/example/config/index"
+    ],
+    "window": {
+        "navigationBarBackgroundColor": "#f8f8f8",
+        "navigationBarTitleText": "gsx-mp-scaffold",
+        "navigationBarTextStyle": "black",
+        "backgroundTextStyle": "dark",
+        "backgroundColor": "#fff"
+    },
+    "networkTimeout": {
+        "request": 10000,
+        "connectSocket": 10000,
+        "uploadFile": 10000,
+        "downloadFile": 10000
+    },
+    "debug": true,
+    "sitemapLocation": "sitemap.json"
+}

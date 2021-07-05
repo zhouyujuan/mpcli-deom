@@ -1,0 +1,51 @@
+{
+    "name": "gsx-answer",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+        "dev": "mp-cli start",
+        "build": "mp-cli build",
+        "update": "npm i habo-mp-sdk@latest @haoke/gsx-mp-log@latest -S",
+        "upload": "node ./scripts/upload.js",
+        "commit": "git-cz",
+        "wxci:dev": "mp-cli build",
+        "wxci:beta": "NODE_ENV=beta node ./src/setEnv.js & mp-cli build & node ci.js",
+        "wxci:test": "NODE_ENV=test node ./src/setEnv.js & mp-cli build & node ci.js",
+        "wxci:prod": "NODE_ENV=prod node ./src/setEnv.js & mp-cli build & node ci.js",
+        "wxci:local": "NODE_ENV=prod node ./src/setEnv.js & mp-cli build & node ci.local.js"
+    },
+    "config": {
+        "commitizen": {
+            "path": "node_modules/cz-conventional-changelog"
+        }
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@haoke/gsx-mp-log": "^2.0.15",
+        "habo-mp-sdk": "0.0.20",
+        "mobx-miniprogram": "^4.13.2",
+        "mobx-miniprogram-bindings": "^2.0.0"
+    },
+    "devDependencies": {
+        "eslint-plugin-mew": "^1.0.2",
+        "eslint-plugin-mini": "^0.0.5",
+        "form-data": "^4.0.0",
+        "git-cz": "^4.7.6",
+        "gulp-less": "^4.0.1",
+        "gulp-rename": "^2.0.0",
+        "husky": "^6.0.0",
+        "lint-staged": "^11.0.0",
+        "inquirer": "^8.1.1",
+        "miniprogram-ci": "^1.1.6"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "**/*.{wxml,less,js,wxss,json}": "mew"
+    }
+}

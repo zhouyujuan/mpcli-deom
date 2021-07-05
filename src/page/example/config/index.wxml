@@ -1,0 +1,33 @@
+<view class="container">
+    <view>1. 在此模板基础之上，需要修改相应的配置文件： </view>
+    <view class="section">
+        <view>project.config.json</view>
+        <view>可能需要修改的字段有：appid，projectname，libVersion</view>
+    </view>
+    <view class="section">
+        <view>package.json</view>
+        <view>可能需要修改的字段有：name， description</view>
+    </view>
+    <view class="section">
+        <view>README.md</view>
+        <view>补充本项目相关的说明信息</view>
+    </view>
+    <view class="section">
+        <view>代码检查</view>
+        <view>全局安装 eslint，便于在 vscode 中， 实时提示代码风格问题</view>
+    </view>
+    <view class="section">
+        <view>编辑器格式化工具</view>
+        <view>使用mew提供的格式化工具，保持代码风格一致</view>
+        <view>
+            下载 mew 提供的 vscode 代码提示插件， 下载地址 https://git.baijia.com/fe/vscode-mew/tree/vsix/release
+        </view>
+        <view>
+            根据 https://git.baijia.com/fe/vscode-mew/-/blob/vsix/README.md 提示完成安装
+        </view>
+        <view>
+            手动设置一下 format 工具
+        </view>
+        <image class="img" src="https://gsx-static-beta.oss-cn-beijing.aliyuncs.com/mp/assets/formater.jpg" mode="aspectFit"></image>
+    </view>
+</view>

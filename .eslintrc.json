@@ -1,0 +1,8 @@
+{
+    "extends": [
+        "plugin:mew/miniprogram"
+    ],
+    "plugins": [
+        "mini"
+    ]
+}
